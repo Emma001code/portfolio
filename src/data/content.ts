@@ -264,11 +264,11 @@ export type ExperienceItem = {
 
 export const experience: ExperienceItem[] = [
   {
-    id: 'thevendor',
+    id: 'Healthvendor',
     category: 'Employment',
     badge: 'Internship',
     title: 'Backend Developer',
-    org: 'Thevendor Startup — Alumni Startup Health Venture',
+    org: 'Healthvendor — Health Tech Venture Startup',
     period: 'September 2025 – February 2026',
     location: 'Kigali, Rwanda',
     status: 'Completed',
