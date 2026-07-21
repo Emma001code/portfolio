@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        var t = localStorage.getItem('theme')
+        var dark =
+          t === 'dark' ||
+          (t !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+        if (dark) document.documentElement.classList.add('dark')
+      })()
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Emmanuel Ngwoke — Full-stack engineer building health-tech and scalable systems. Mastercard Foundation Scholar at African Leadership University."
+    />
+    <meta property="og:title" content="Emmanuel Ngwoke — Full-Stack · Health-Tech" />
+    <meta
+      property="og:description"
+      content="Full-stack engineer specializing in health-tech and distributed systems. Mastercard Foundation Scholar at ALU."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Emmanuel Ngwoke — Full-Stack · Health-Tech" />
+    <meta
+      name="twitter:description"
+      content="Full-stack engineer specializing in health-tech and distributed systems. Mastercard Foundation Scholar at ALU."
+    />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Emmanuel Ngwoke — Full-Stack · Health-Tech</title>
+    <style>
+      #preloader {
+        position: fixed;
+        inset: 0;
+        z-index: 99999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        background: #f4f7f8;
+        transition: opacity 0.5s ease;
+      }
+      .dark #preloader {
+        background: #0a0f14;
+      }
+
+      /* Spinning ring */
+      #pl-ring {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        border: 2px solid rgba(15, 118, 110, 0.15);
+        border-top-color: #0f766e;
+        animation: pl-spin 0.9s linear infinite;
+        margin-bottom: 28px;
+      }
+      .dark #pl-ring {
+        border-color: rgba(45, 212, 191, 0.15);
+        border-top-color: #2dd4bf;
+      }
+      @keyframes pl-spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Initials */
+      #pl-initials {
+        font-family: 'Inter', sans-serif;
+        font-size: 2.6rem;
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        color: #0f766e;
+        line-height: 1;
+        margin-bottom: 10px;
+        opacity: 0;
+        transform: translateY(8px);
+        animation: pl-rise 0.5s ease 0.15s forwards;
+      }
+      .dark #pl-initials {
+        color: #2dd4bf;
+      }
+      @keyframes pl-rise {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Name */
+      #pl-name {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.68rem;
+        font-weight: 400;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #718096;
+        margin-bottom: 36px;
+        opacity: 0;
+        animation: pl-rise 0.5s ease 0.3s forwards;
+      }
+      .dark #pl-name {
+        color: #6b7c8c;
+      }
+
+      /* Progress bar track */
+      #pl-track {
+        width: 120px;
+        height: 2px;
+        background: rgba(15, 118, 110, 0.15);
+        border-radius: 2px;
+        overflow: hidden;
+        opacity: 0;
+        animation: pl-rise 0.4s ease 0.4s forwards;
+      }
+      .dark #pl-track {
+        background: rgba(45, 212, 191, 0.15);
+      }
+      #pl-bar {
+        height: 100%;
+        width: 0%;
+        background: #0f766e;
+        border-radius: 2px;
+        box-shadow: 0 0 8px rgba(15, 118, 110, 0.6);
+        animation: pl-fill 1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+      }
+      .dark #pl-bar {
+        background: #2dd4bf;
+        box-shadow: 0 0 8px rgba(45, 212, 191, 0.6);
+      }
+      @keyframes pl-fill {
+        to {
+          width: 100%;
+        }
+      }
+
+      /* Hide root content while preloader is up */
+      #root {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="preloader">
+      <div id="pl-ring"></div>
+      <div id="pl-initials">ECN</div>
+      <div id="pl-name">Emmanuel Chibuikem Ngwoke</div>
+      <div id="pl-track"><div id="pl-bar"></div></div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
