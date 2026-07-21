@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 
-/** Dismisses the HTML #preloader — same timing as choldaniel.com (1.3s hold + 0.5s fade). */
 export function SplashScreen() {
   useEffect(() => {
     const preloader = document.getElementById('preloader')

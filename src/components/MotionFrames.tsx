@@ -1,6 +1,5 @@
 import { gallery } from '../data/content'
 
-/** Alternating tilts matching choldaniel.com photo-card transforms */
 const tilts = [
   { rotate: -5, y: -14 },
   { rotate: 4, y: 12 },

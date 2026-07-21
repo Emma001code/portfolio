@@ -1,11 +1,7 @@
 import { useEffect, useState } from 'react'
 import { motion, useMotionValue, useSpring } from 'framer-motion'
 
-/**
- * Custom cursor matching choldaniel.com structure:
- * solid glowing dot + lagging ring. Teal accent for this site.
- * Disabled on touch / reduced-motion.
- */
+/** Solid dot + lagging ring cursor. Disabled on touch / reduced-motion. */
 export function CustomCursor() {
   const [enabled, setEnabled] = useState(false)
   const [visible, setVisible] = useState(false)
@@ -14,7 +10,6 @@ export function CustomCursor() {
   const mouseX = useMotionValue(-100)
   const mouseY = useMotionValue(-100)
 
-  // Ring lags slightly behind the dot (Chol-style lerp)
   const ringX = useSpring(mouseX, { stiffness: 180, damping: 28, mass: 0.35 })
   const ringY = useSpring(mouseY, { stiffness: 180, damping: 28, mass: 0.35 })
 
