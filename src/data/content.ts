@@ -346,7 +346,7 @@ export const education = {
     school: 'African Leadership University (ALU-Africa)',
     location: 'Kigali, Rwanda',
     period: 'May 2024 – April 2027',
-    metricLabel: 'TGPA',
+    metricLabel: 'CGPA',
     metric: '4.63/5.0',
     badge: 'Mastercard Foundation Scholar',
     topCourses: [
@@ -380,17 +380,17 @@ export const research = {
   eyebrow: 'Research',
   title: 'Publications',
   subtitle:
-    'Health-tech systems research and applied AI — from clinical decision support to Industry 4.0 automation.',
+    'Health-tech systems research and applied AI from clinical decision support to Industry 4.0 automation.',
   thesis: {
-    status: 'In Progress',
+    status: 'Ongoing',
     statusTone: 'progress' as const,
-    badges: ['Health-Tech · Thesis', 'In Progress · 2026–2027'],
+    badges: ['Health-Tech · Ongoing Project', 'Research · In Progress'],
     title:
       'AI-Driven Test Panel Optimisation Platform for Clinical Decision Support and Diagnostic Efficiency',
     authors: 'Emmanuel Chibuikem Ngwoke',
-    venue: 'African Leadership University — Final Year Thesis',
+    venue: 'Ongoing Project & Research · African Leadership University',
     abstract:
-      'Ongoing thesis designing a clinical decision support platform that analyses lab test ordering patterns and outcomes to recommend cost-effective test panels. The work develops ML and analytics models to identify redundant testing, optimise diagnostic workflows, and reduce unnecessary investigations — connecting directly to real-world health-tech delivery.',
+      'Ongoing project and research exploring a clinical decision support platform that analyses lab test ordering patterns and outcomes to recommend cost-effective test panels. The work develops ML and analytics models to identify redundant testing, optimise diagnostic workflows, and reduce unnecessary investigations — connecting directly to real-world health-tech delivery.',
     tags: [
       'clinical decision support',
       'health-tech',
@@ -400,8 +400,8 @@ export const research = {
       'medical data analytics',
     ],
     details: [
-      { label: 'Status', value: 'Active research' },
-      { label: 'Period', value: 'May 2026 – Jan 2027' },
+      { label: 'Status', value: 'Ongoing project & research' },
+      { label: 'Period', value: '2026 – Present' },
       { label: 'Institution', value: 'ALU-Africa, Kigali' },
       { label: 'Focus', value: 'Health-tech · CDS' },
     ],

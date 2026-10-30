@@ -63,7 +63,7 @@ function ResearchPaperCard({ paper }: { paper: ResearchCard }) {
           <div className="space-y-4">
             <div className="rounded-sm border border-[var(--color-line)] bg-[var(--color-canvas)] p-5">
               <p className="font-mono mb-4 text-[10px] tracking-[0.18em] text-[var(--color-ink-faint)] uppercase">
-                Paper Details
+                Details
               </p>
               <dl className="space-y-3.5">
                 {paper.details.map((d) => (
