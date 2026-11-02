@@ -119,6 +119,34 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: 'retain',
+    title: 'Retain',
+    subtitle: 'Personal Expense & Budget Tracker',
+    status: 'Live',
+    featured: true,
+    image: '/gallery/Retain.png',
+    description:
+      'Full-stack expense and budget manager for spending in FRw. Record expenses, set a monthly ceiling, and see whether you are within, approaching, or over budget — with search, filters, pagination, and an admin insights dashboard.',
+    tech: [
+      'React',
+      'TypeScript',
+      'Vite',
+      'Tailwind CSS',
+      'Redux Toolkit',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'JWT',
+    ],
+    github: 'https://github.com/Emma001code/Retain_Expense-Tracker.git',
+    demo: 'https://retain-y8d3.onrender.com',
+    highlights: [
+      'JWT auth with protected routes; signup creates users, admin is seeded',
+      'CRUD expenses with Redux-powered search, filter, sort, and pagination',
+      'Monthly budget status (within / approaching / over) plus admin insights',
+    ],
+  },
+  {
     id: 'uzimaai',
     title: 'UzimaAI',
     subtitle: 'AI-Driven Health Management Platform',

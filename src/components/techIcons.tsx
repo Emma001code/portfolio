@@ -16,9 +16,11 @@ import {
   SiPostgresql,
   SiPython,
   SiReact,
+  SiRedux,
   SiSass,
   SiTailwindcss,
   SiTypescript,
+  SiVite,
 } from 'react-icons/si'
 import { Code2, Database, LayoutGrid, Shield } from 'lucide-react'
 
@@ -31,6 +33,8 @@ const TECH_MAP: Record<string, TechMeta> = {
   'React Native': { icon: SiReact, color: '#61DAFB' },
   React: { icon: SiReact, color: '#61DAFB' },
   Expo: { icon: SiExpo, color: '#000020' },
+  Vite: { icon: SiVite, color: '#646CFF' },
+  'Redux Toolkit': { icon: SiRedux, color: '#764ABC' },
   'Node.js': { icon: SiNodedotjs, color: '#339933' },
   Express: { icon: SiExpress, color: '#000000' },
   TypeScript: { icon: SiTypescript, color: '#3178C6' },
