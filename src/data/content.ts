@@ -147,6 +147,24 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: 'medibook-api',
+    title: 'MediBook API',
+    subtitle: 'Clinic Appointment Booking Backend',
+    status: 'Completed',
+    featured: true,
+    image: '/gallery/MedbookAPI.jpg',
+    description:
+      'REST backend for a community clinic: book and cancel doctor appointments, enforce working-hours and slot rules, run admin reports, and promote waitlisted patients through a Redis worker.',
+    tech: ['Node.js', 'Express', 'MySQL', 'Redis', 'Jest'],
+    github: 'https://github.com/Emma001code/Backend-Project_MedbookAPI.git',
+    video: 'https://youtu.be/z_ai67KqA9k',
+    highlights: [
+      'Appointment booking with 30-minute slots, working-hours checks, and double-booking protection',
+      'Cancellation refund tiers plus Redis waitlist promotion worker',
+      'SQL-backed admin reports, audit logging, and Jest unit tests',
+    ],
+  },
+  {
     id: 'uzimaai',
     title: 'UzimaAI',
     subtitle: 'AI-Driven Health Management Platform',
